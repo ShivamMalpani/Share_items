@@ -1,21 +1,50 @@
 {% extends 'main.html' %}
 {%block content%}
 <table >
-    <tr >
-        <th> Serial No.</th>
+    <tr style="text-align:center" >
+        <th style="padding:10px"> Serial No.</th>
         <th>Friends of Parth</th>
     </tr>
-    <tr>
-        <td> 1. </td>
+    <tr style="text-align:center">
+        <td style="text-align:center"> 1. </td>
         <td>Shivam Malpani</td>
     </tr>
-    <tr>
-        <td> 2. </td>
+    <tr style="text-align:center">
+        <td style="text-align:center"> 2. </td>
         <td> Shivam Sanjay Malpani</td>
     </tr>
-    <tr>
-        <td>3.</td>
+    <tr style="text-align:center">
+        <td style="text-align:center">3.</td>
         <td>Shivam</td>
     </tr>
 </table>
+
+<ul>
+    <h2 style="font-weight:normal">Properties of Parth which makes him legend</h2>
+    <li>He has a good friend named Shivam</li>
+    <li>He is learning Django from Master Shivam Malpani</li>
+    <li>He admires Shivam very much </li>
+</ul>
+<dl>
+    <dt> Who is Parth? </dt>
+    <dd style="padding-bottom:10px"> Parth is Shivam's friend.</dd>
+    <dt> What are Parth's primary skills?</dt>
+    <dd> Not to be said in public </dd>
+</dl>
+<style>
+    .parth_1 {
+        color:green;
+    }
+</style>
+<script>
+    document.getElementById("parth_2").style.color = "red";
+</script>
+<div class="parth_1">
+    <p>Now we would change the topic.</p>
+    <p class="new_topic"> Now the topic would be about parth's hobbies. </p>
+    <p> What Parth likes doing the most (which is also his primary skill) cant be revealed in public.
+        What he likes doing second most is talking to Shivam. </p>
+    <p id="parth_2"> </p>
+</div>
+
 {% endblock content %}
