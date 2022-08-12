@@ -2,8 +2,14 @@
 
 {% block content %}
 
-<p>
-
-</p>
+<form method="POST" action="">
+    {% csrf_token %}
+    {{form.as_p}}
+<!--    <label for="12040770">Name</label>-->
+<!--    <input type="text" id="12040770" name="name">-->
+<!--    <label for="07704021">Description</label>-->
+<!--    <input type="text" id="07704021" name="description">-->
+    <input type="submit" id="4797595278" value="dabao bhai">
+</form>
 
 {% endblock content %}
